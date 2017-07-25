@@ -1,0 +1,30 @@
+.proHeng{
+	height: @fontWeight;
+	width: 50px;
+	background-color: @fontColor;
+}
+.proShu{
+	width: @fontWeight;
+	height: 50px;
+	background: @fontColor;
+}
+
+.bihua{
+    border-radius: 1px;
+    position: absolute;
+
+    &.heng{
+        .proHeng;
+    }
+    &.shu{
+        .proShu;
+    }
+    &.pie{
+        .proShu;
+        transform: rotate(30deg);
+    }
+    &.na{
+        .proShu;
+        transform: rotate(-30deg);
+    }
+}
