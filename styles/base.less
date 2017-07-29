@@ -17,7 +17,7 @@
 		width: @gitScale;
 		height: @gitScale;
 		background-color: #F05033;
-		border-radius: 7%;
+		border-radius: 32px;
 
 		position: absolute;
 		top: 0;
@@ -26,20 +26,20 @@
 
 	.git-line{
 		width: @lineWeight;
-		height: @gitScale * @divideUnit*2;
+		height: @gitScale * 0.75;
 		background-color: #fff;
 
 		position: absolute;
 
 		&.line-1{
 			top: 0;
-			left: @gitScale * @divideUnit*2 - @lineWeight / 2;
+			left: 263px;
 		}
 		&.line-2{
-			top: @gitScale * @divideUnit - @lineWeight/2;
-			left: @gitScale * @divideUnit*2;
+			top: 110px;
+			left: 283px;
 
-			height: @gitScale * 1.414 * @divideUnit;
+			height: @gitScale / 1.414;
 			transform-origin: top;
 			transform: rotate(45deg);
 		}
@@ -47,23 +47,23 @@
 
 	.git-dot{
 		width: @dotScale;
-		height: @gitScale / 5;
+		height: @dotScale;
 		background-color: #fff;
 		border-radius: 50%;
 
 		position: absolute;
 
 		&.dot-1{
-			top: @gitScale*@divideUnit - @dotScale*@divideUnit*2;
-			left: @gitScale*@divideUnit*2 - @dotScale*@divideUnit*1;
+			top: 90px - @fix;
+			left: 235px - @fix;
 		}
 		&.dot-2{
-			top: @gitScale*@divideUnit*2 - @dotScale/2;
-			left: @gitScale*@divideUnit - @dotScale/2;
+			top: 250px;
+			left: 235px;
 		}
 		&.dot-3{
-			top: @gitScale*@divideUnit*2 - @dotScale/2;
-			left: @gitScale*@divideUnit*2 - @dotScale/2;
+			top: 250px - @fix;
+			left: 80px - @fix;
 		}
 	}
 
